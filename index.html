@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Facture PDF generator</title>
+</head>
+<body>
+    <div class="formulaire" id="formulaire">
+        <h2>Créer votre facture</h2>
+        <form id="myForm">
+            <p>Client</p>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Nom" class="form-nom">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" placeholder="Prénom" class="form-prenom">
+            <p>Entreprise</p>
+            <label for="entreprise-nom">Nom de l'entreprise</label>
+            <input type="text" id="entreprise-nom" placeholder="Nom de l'entreprise" class="form-entreprise-nom">
+            <label for="entreprise-siren">SIREN</label>
+            <input type="text" id="entreprise-siren" placeholder="SIREN" class="form-entreprise-siren">
+            <label for="prix">Prix</label>
+            <input type="text" id="prix" placeholder="Prix" class="form-prix">
+            <button type="button" onclick="afficherPDF()">Générer PDF</button>
+        </form>
+    </div>
+    <script src="convertToPDF.js"></script>
+</body>
+</html>
